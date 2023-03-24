@@ -2,7 +2,7 @@ version: "3.4"
 
 services:
   darts_score_ui:
-    image: kosterra/darts-score-ui:2023.3.1
+    image: kosterra/darts-score-ui:latest
     container_name: darts_score_ui
     restart: always
     ports:
@@ -11,7 +11,7 @@ services:
       - ./ui.env
 
   darts_score_api:
-    image: kosterra/darts-score-api:2023.3.1
+    image: kosterra/darts-score-api:latest
     container_name: darts_score_api
     restart: always
     ports:
